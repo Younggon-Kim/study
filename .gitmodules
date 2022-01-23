@@ -1,0 +1,9 @@
+[submodule "Kubernates/Kubernetes-Up-and-Running/k8s-up-and-running-demos"]
+	path = Kubernates/Kubernetes-Up-and-Running/k8s-up-and-running-demos
+	url = https://github.com/kubernetes-up-and-running/kuard
+[submodule "Kubernates/Kubernetes-Up-and-Running/k8s-examples"]
+	path = Kubernates/Kubernetes-Up-and-Running/k8s-examples
+	url = https://github.com/kubernetes-up-and-running/examples
+[submodule "Kubernates/Kubernetes-Up-and-Running/kubernetes-up-and-running-2e"]
+	path = Kubernates/Kubernetes-Up-and-Running/kubernetes-up-and-running-2e
+	url = https://github.com/AcornPublishing/kubernetes-up-and-running-2e
