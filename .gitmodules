@@ -7,3 +7,6 @@
 [submodule "Kubernates/Kubernetes-Up-and-Running/kubernetes-up-and-running-2e"]
 	path = Kubernates/Kubernetes-Up-and-Running/kubernetes-up-and-running-2e
 	url = https://github.com/AcornPublishing/kubernetes-up-and-running-2e
+[submodule "Kubernates/Kubernetes-and-Docker-for-Container-Infra-env/_Book_k8sInfra"]
+	path = Kubernates/Kubernetes-and-Docker-for-Container-Infra-env/_Book_k8sInfra
+	url = https://github.com/sysnet4admin/_Book_k8sInfra
