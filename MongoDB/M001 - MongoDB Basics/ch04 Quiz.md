@@ -2,7 +2,6 @@
 
 ## Lab 1: Comparison Operators
 ### Problem: 
-To complete this exercise connect to your Atlas cluster using the in-browser IDE space at the end of this chapter.
 How many documents in the sample_training.zips collection have fewer than 1000 people listed in the pop field?
 Copy/paste the exact numeric value (without double quotes) of the result that you get into the response field.
 
@@ -15,8 +14,7 @@ db.zips.find({"pop": {"$lt":1000}}).count()
 <br/><br/>
 
 ## Lab 2: Comparison Operators
-### Problem:
-To complete this exercise connect to your Atlas cluster using the in-browser IDE space at the end of this chapter.
+### Problem: 
 What is the difference between the number of people born in 1998 and the number of people born after 1998 in the sample_training.trips collection?
 Enter the exact numeric value of the result that you get into the response field.
 
@@ -32,7 +30,6 @@ db.trips.find({"birth year": {"$gt": 1998}}).count()
 
 ## Lab 3: Comparison Operators
 ### Problem:
-To complete this exercise connect to your Atlas cluster using the in-browser IDE space at the end of this chapter.
 Using the sample_training.routes collection find out which of the following statements will return all routes that have at least one stop in them?
 
 Check all answers that apply:
@@ -45,7 +42,6 @@ Check all answers that apply:
 
 ## Quiz 1: Logic Operators
 ## Problem:
-To complete this exercise connect to your Atlas cluster using the in-browser IDE space at the end of this chapter.
 How many businesses in the sample_training.inspections dataset have the inspection result "Out of Business" and belong to the "Home Improvement Contractor - 100" sector?
 Enter the exact numeric value of the result that you get into the response field.
 
@@ -94,7 +90,6 @@ db.inspections.find(
 
 ## Lab 1: Logic Operators
 ### Problem:
-To complete this exercise connect to your Atlas cluster using the in-browser IDE space at the end of this chapter.
 Before solving this exercise, make sure to undo some of the changes that we made to the zips collection earlier in the course by running the following command:
 ```
 db.zips.updateMany({ "city": "HUDSON" }, { "$inc": { "pop": -10 } })
@@ -113,7 +108,6 @@ db.zips.find({"pop":{"$gte": 5000}}, {"pop":{"$lte":1000000}}).count()
 
 ## Lab 2: Logic Operators
 ### Problem:
-To complete this exercise connect to your Atlas cluster using the in-browser IDE space at the end of this chapter.
 How many companies in the sample_training.companies dataset were
 either founded in 2004
   - [and] either have the social category_code [or] web category_code,
@@ -211,7 +205,6 @@ db.companies.find({ "number_of_employees": { "$gt":  "$founded_year" }
 
 ## Lab: $expr
 ### Problem:
-To complete this exercise connect to your Atlas cluster using the in-browser IDE space at the end of this chapter.
 How many companies in the sample_training.companies collection have the same permalink as their twitter_username?
 
 Enter answer here:
@@ -224,7 +217,6 @@ db.companies.find({"$expr": {"$eq": ["$permalink", "$twitter_username"]}}).count
 
 ## Lab 1: Array Operators
 ### Problem:
-To complete this exercise connect to your Atlas cluster using the in-browser IDE space at the end of this chapter.
 What is the name of the listing in the sample_airbnb.listingsAndReviews dataset that accommodates more than 6 people and has exactly 50 reviews?
 Copy/Paste the value of the "name" field into the response field without quotation marks.
 
@@ -306,7 +298,6 @@ db.listingsAndReviews.find(
 
 ## Lab: Array Operators and Projection
 ### Problem:
-To complete this exercise connect to your Atlas cluster using the in-browser IDE space at the end of this chapter.
 How many companies in the sample_training.companies collection have offices in the city of Seattle?
 Copy/paste your answer to the response field.
 
@@ -377,9 +368,7 @@ db.companies.find(
 
 
 ## Lab 1: Querying Arrays and Sub-Documents
-### Problem:
-To complete this exercise connect to your Atlas cluster using the in-browser IDE space at the end of this chapter.
-How many trips in the sample_training.trips collection started at stations that are to the west of the -74 longitude coordinate?
+### Problem: How many trips in the sample_training.trips collection started at stations that are to the west of the -74 longitude coordinate?
 Longitude decreases in value as you move west.
 Note: We always list the longitude first and then latitude in the coordinate pairs; i.e.
 ```
@@ -400,7 +389,6 @@ db.trips.find(
 
 ## Lab 2: Querying Arrays and Sub-Documents
 ### Problem:
-To complete this exercise connect to your Atlas cluster using the in-browser IDE space at the end of this chapter.
 How many inspections from the sample_training.inspections collection were conducted in the city of NEW YORK?
 
 Enter answer here:
