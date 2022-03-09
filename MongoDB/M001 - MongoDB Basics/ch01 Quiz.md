@@ -49,8 +49,8 @@ MongoDB's database uses tables of related data.
 Choose the best answer:
 - [ ] Collections are documents that are organized in rows and columns.
 - [ ] Documents are made up of collections.
-- [ ] Collections consist of one or many documents.
-- [x] **Collections are tables of documents and other collections.**
+- [x] **Collections consist of one or many documents.**
+- [ ] Collections are tables of documents and other collections.
 
 ```
 Collections consist of many documents.

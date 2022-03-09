@@ -321,6 +321,7 @@ Which of the following queries will return only the names of companies from the 
 
 Choose the best answer:
 
+- [ ] 
 ```
 db.companies.find(
 { 
@@ -336,6 +337,7 @@ db.companies.find(
 )
 ```
 
+- [ ] 
 ```
 db.companies.find(
 {
@@ -349,7 +351,8 @@ db.companies.find(
 }
 )
 ```
-
+ 
+- [x] 
 ```
 db.companies.find(
 {
